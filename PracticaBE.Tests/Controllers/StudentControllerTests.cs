@@ -9,13 +9,13 @@ namespace PracticaBE.Tests
     public class StudentControllerTests
     {
         [Fact]
-        public void Student_withValidIdandOver51Nota_IsApproved()
+        public void Student_withValidCiAndOver51Nota_IsApproved()
         {
             // Arrange
             
             var studentService = new Mock<IStudentService>();
             StudentController studentController = new StudentController(studentService.Object);
-            //var student = new Student { Id = 1, Name = "Alice", Nota = 60 };
+            //var student = new Student { Ci = 1, Name = "Alice", Nota = 60 };
             studentService.Setup(s => s.HasApproved(1)).Returns(
                 true
             );
