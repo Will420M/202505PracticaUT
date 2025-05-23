@@ -22,16 +22,16 @@ namespace PracticaBE.Controllers
             return _studentService.GetAll();
         }
 
-        [HttpGet("{id}")]
-        public Student GetById(int id)
+        [HttpGet("{ci}")]
+        public Student GetByCi(int ci)
         {
-           return _studentService.GetById(id);
+           return _studentService.GetByCi(ci);
         }
         
-         [HttpGet("/HasApproved/{id}")]
-        public Boolean EvaluateHasApproved(int id)
+         [HttpGet("/HasApproved/{ci}")]
+        public Boolean EvaluateHasApproved(int ci)
         {
-           return _studentService.HasApproved(id);
+           return _studentService.HasApproved(ci);
         }
 
         [HttpPost]
@@ -40,16 +40,16 @@ namespace PracticaBE.Controllers
             return _studentService.Create(student);
         }
 
-        [HttpPut("{id}")]
-        public Student Update(int id, Student updatedStudent)
+        [HttpPut("{ci}")]
+        public Student Update(int ci, Student updatedStudent)
         {
-            return _studentService.Update(id, updatedStudent);
+            return _studentService.Update(ci, updatedStudent);
         }
 
-        [HttpDelete("{id}")]
-        public Student Delete(int id)
+        [HttpDelete("{ci}")]
+        public Student Delete(int ci)
         {
-            return _studentService.Delete(id);
+            return _studentService.Delete(ci);
         }
     }
 }

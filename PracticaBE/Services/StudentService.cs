@@ -12,8 +12,8 @@ namespace PracticaBE.Services
         {
             _students = new List<Student>
             {
-                new Student { Id = 1, Name = "Alice", Nota = 60 },
-                new Student { Id = 2, Name = "Bob", Nota = 22 }
+                new Student { Ci = 1, Name = "Alice", Nota = 60 },
+                new Student { Ci = 2, Name = "Bob", Nota = 22 }
             };
            
         }
@@ -23,22 +23,22 @@ namespace PracticaBE.Services
             return _students;
         }
 
-        public Student GetById(int id)
+        public Student GetByCi(int ci)
         {
-            Student student = _students.FirstOrDefault(s => s.Id == id);
+            Student student = _students.FirstOrDefault(s => s.Ci == ci);
             return student;
         }
 
         public Student Create(Student student)
         {
-            student.Id = _students.Count > 0 ? _students.Max(s => s.Id) + 1 : 1;
+            student.Ci = _students.Count > 0 ? _students.Max(s => s.Ci) + 1 : 1;
             _students.Add(student);
             return student;
         }
 
-        public Student Update(int id, Student updatedStudent)
+        public Student Update(int ci, Student updatedStudent)
         {
-            var student = _students.FirstOrDefault(s => s.Id == id);
+            var student = _students.FirstOrDefault(s => s.Ci == ci);
             if (student == null)
                 return null;
 
@@ -47,9 +47,9 @@ namespace PracticaBE.Services
             return student;
         }
 
-        public Student Delete(int id)
+        public Student Delete(int ci)
         {
-            var student = _students.FirstOrDefault(s => s.Id == id);
+            var student = _students.FirstOrDefault(s => s.Ci == ci);
             if (student == null)
                 return null;
 
@@ -57,9 +57,9 @@ namespace PracticaBE.Services
             return student;
         }
         
-        public Boolean HasApproved(int id)
+        public Boolean HasApproved(int ci)
         {
-            var student = _students.FirstOrDefault(s => s.Id == id);
+            var student = _students.FirstOrDefault(s => s.Ci == ci);
             if (student == null)
                 return false;
 
