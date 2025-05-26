@@ -12,8 +12,8 @@ namespace PracticaBE.Services
         {
             _students = new List<Student>
             {
-                new Student { Ci = 1, Name = "Alice", Nota = 60 },
-                new Student { Ci = 2, Name = "Bob", Nota = 22 }
+                new Student { Ci = 123, Name = "Carlos", Nota = 60 },
+                new Student { Ci = 221, Name = "Fernando", Nota = 22 }
             };
            
         }

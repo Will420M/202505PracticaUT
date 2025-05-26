@@ -31,3 +31,4 @@ C:\UT Practica\PracticaBE\obj\Debug\net8.0\refint\PracticaBE.dll
 C:\UT Practica\PracticaBE\obj\Debug\net8.0\PracticaBE.pdb
 C:\UT Practica\PracticaBE\obj\Debug\net8.0\PracticaBE.genruntimeconfig.cache
 C:\UT Practica\PracticaBE\obj\Debug\net8.0\ref\PracticaBE.dll
+C:\UT Practica\PracticaBE\obj\Debug\net8.0\PracticaBE.sourcelink.json

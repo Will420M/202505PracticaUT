@@ -112,3 +112,4 @@ C:\UT Practica\PracticaBE.Tests\obj\Debug\net8.0\PracticaBE.Tests.genruntimeconf
 C:\UT Practica\PracticaBE.Tests\obj\Debug\net8.0\ref\PracticaBE.Tests.dll
 C:\UT Practica\PracticaBE.Tests\bin\Debug\net8.0\Castle.Core.dll
 C:\UT Practica\PracticaBE.Tests\bin\Debug\net8.0\Moq.dll
+C:\UT Practica\PracticaBE.Tests\obj\Debug\net8.0\PracticaBE.Tests.sourcelink.json
